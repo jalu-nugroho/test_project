@@ -54,12 +54,10 @@
                     <label for="job" class="col-sm-2 col-form-label">Select Job:</label>
                     <div class="col-sm-8">
                         <select class="form-select" id="job" aria-describedby="helpBlock">
-                            <option selected="Select a job from the list"></option>
-                            <option value="Option 1">Option 1</option>
-                            <option value="Option 2">Option 2</option>
-                            <option value="Option 3">Option 3</option>
-                            <option value="Option 4">Option 4</option>
-                            <option value="Option 5">Option 5</option>
+                            <option selected>Select a job from the list</option>
+                            {% for job in jobs %}
+                                <option value="{{job['id']}}">{{job['Date']}} - {{job['Session']}} - {{job['Job']}}</option>
+                            {% endfor %}
                         </select>
                         <div id="helpBlock" class="form-text">Only available jobs will be shown here. If your selected job is no longer available, you will be notified here.</div>
                     </div>
@@ -68,7 +66,7 @@
                 <div class="mb-3 row">
                     <label class="col-sm-2 col-form-label"></label>
                     <div class="col-sm-8">
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="button" class="btn btn-outline-primary">Submit</button>
                     </div>
                 </div>
             </form>
