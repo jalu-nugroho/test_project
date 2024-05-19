@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Casey Comp - Volunteer Signup Form</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <style>
             .blank-block-line {
                 height: 40px;
@@ -17,58 +18,63 @@
                 IMPORTANT - Sign up for a job one at a time. If you want to volunteer for multiple jobs, you need to repeat the signup for each job
             </p>
             <div class="blank-block-line"></div>
-            <form class="form-horizontal">
-                <div class="form-group">
-                    <label for="firstName" class="col-sm-2 control-label">First Name</label>
-                    <div class="col-sm-10">
+            <form action="">
+                <div class="mb-3 row">
+                    <label for="firstName" class="col-sm-2 col-form-label">First Name</label>
+                    <div class="col-sm-8">
                         <input type="text" class="form-control" id="firstName" placeholder="First Name">
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="lastName" class="col-sm-2 control-label">Last Name</label>
-                    <div class="col-sm-10">
+                <div class="mb-3 row">
+                    <label for="lastName" class="col-sm-2 col-form-label">Last Name</label>
+                    <div class="col-sm-8">
                         <input type="text" class="form-control" id="lastName" placeholder="Last Name">
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="email" class="col-sm-2 control-label">Email</label>
-                    <div class="col-sm-10">
+                <div class="mb-3 row">
+                    <label for="email" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-8">
                         <input type="email" class="form-control" id="email" placeholder="Email">
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="mobile" class="col-sm-2 control-label">Mobile</label>
-                    <div class="col-sm-10">
+                <div class="mb-3 row">
+                    <label for="mobile" class="col-sm-2 col-form-label">Mobile</label>
+                    <div class="col-sm-8">
                         <input type="tel" class="form-control" id="mobile" placeholder="Mobile">
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="dancerName" class="col-sm-2 control-label">Dancer Name</label>
-                    <div class="col-sm-10">
+                <div class="mb-3 row">
+                    <label for="dancerName" class="col-sm-2 col-form-label">Dancer Name</label>
+                    <div class="col-sm-8">
                         <input type="text" class="form-control" id="dancerName" placeholder="Dancer Name">
                     </div>
                 </div>
                 <div class="blank-block-line"></div>
-                <div class="form-group">
-                    <label for="job" class="col-sm-2 control-label">Select Job:</label>
-                    <div class="col-sm-10">
-                        <select class="form-control" id="job">
+                <div class="mb-3 row">
+                    <label for="job" class="col-sm-2 col-form-label">Select Job:</label>
+                    <div class="col-sm-8">
+                        <select class="form-select" id="job" aria-describedby="helpBlock">
+                            <option selected="Select a job from the list"></option>
                             <option value="Option 1">Option 1</option>
                             <option value="Option 2">Option 2</option>
                             <option value="Option 3">Option 3</option>
                             <option value="Option 4">Option 4</option>
                             <option value="Option 5">Option 5</option>
                         </select>
-                        <span id="helpBlock" class="help-block">Only available jobs will be shown here. If your selected job is no longer available, you will be notified here.</span>
+                        <div id="helpBlock" class="form-text">Only available jobs will be shown here. If your selected job is no longer available, you will be notified here.</div>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label class="col-sm-2 control-label"></label>
-                    <div class="col-sm-10">
+                <div class="blank-block-line"></div>
+                <div class="mb-3 row">
+                    <label class="col-sm-2 col-form-label"></label>
+                    <div class="col-sm-8">
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
                 </div>
             </form>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     </body>
 </html>
