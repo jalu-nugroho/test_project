@@ -1,19 +1,74 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Test Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Casey Comp - Volunteer Signup Form</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
         <style>
-            h1 {
-                font-family: Roboto;
-                color: darkslateblue;
+            .blank-block-line {
+                height: 40px;
             }
         </style>
     </head>
     <body>
-        <h1>Test Page</h1>
-        <h2>Hola - how are you amigo?</h2>
-        <p>
-            This is text this is text this is text this is text this is text this is text this is text
-        </p>
+        <div class="container-fluid">
+            <h1>Volunteer Signup Form - <small>Casey Comp 2024</small></h1>
+            <p>
+                IMPORTANT - Sign up for a job one at a time. If you want to volunteer for multiple jobs, you need to repeat the signup for each job
+            </p>
+            <div class="blank-block-line"></div>
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="firstName" class="col-sm-2 control-label">First Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="lastName" class="col-sm-2 control-label">Last Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="col-sm-2 control-label">Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="email" placeholder="Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="mobile" class="col-sm-2 control-label">Mobile</label>
+                    <div class="col-sm-10">
+                        <input type="tel" class="form-control" id="mobile" placeholder="Mobile">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="dancerName" class="col-sm-2 control-label">Dancer Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="dancerName" placeholder="Dancer Name">
+                    </div>
+                </div>
+                <div class="blank-block-line"></div>
+                <div class="form-group">
+                    <label for="job" class="col-sm-2 control-label">Select Job:</label>
+                    <div class="col-sm-10">
+                        <select class="form-control" id="job">
+                            <option value="Option 1">Option 1</option>
+                            <option value="Option 2">Option 2</option>
+                            <option value="Option 3">Option 3</option>
+                            <option value="Option 4">Option 4</option>
+                            <option value="Option 5">Option 5</option>
+                        </select>
+                        <span id="helpBlock" class="help-block">Only available jobs will be shown here. If your selected job is no longer available, you will be notified here.</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label"></label>
+                    <div class="col-sm-10">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </body>
 </html>
